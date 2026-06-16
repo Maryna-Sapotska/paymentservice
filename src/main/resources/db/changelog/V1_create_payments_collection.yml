@@ -1,0 +1,48 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-payments-collection
+      author: marina
+      changes:
+        - createIndex:
+            collectionName: payments
+            keys: |
+              {
+                "orderId": 1
+              }
+            options: |
+              {
+                "name": "idx_order_id"
+              }
+
+        - createIndex:
+            collectionName: payments
+            keys: |
+              {
+                "userIid": 1
+              }
+            options: |
+              {
+                "name": "idx_user_id"
+              }
+
+        - createIndex:
+            collectionName: payments
+            keys: |
+              {
+                "status": 1
+              }
+            options: |
+              {
+                "name": "idx_status"
+              }
+
+        - createIndex:
+            collectionName: payments
+            keys: |
+              {
+                "timestamp": -1
+              }
+            options: |
+              {
+                "name": "idx_timestamp"
+              }
