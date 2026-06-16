@@ -1,4 +1,4 @@
-package com.innowise.paymentservice.model;
+package com.innowise.paymentservice.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

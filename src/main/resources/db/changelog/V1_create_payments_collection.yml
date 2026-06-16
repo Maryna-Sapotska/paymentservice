@@ -18,7 +18,8 @@ databaseChangeLog:
             collectionName: payments
             keys: |
               {
-                "userIid": 1
+                "userId": 1
+                "timestamp": 1
               }
             options: |
               {
@@ -30,6 +31,7 @@ databaseChangeLog:
             keys: |
               {
                 "status": 1
+                "timestamp": 1
               }
             options: |
               {
