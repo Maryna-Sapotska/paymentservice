@@ -24,7 +24,7 @@ public class Payment {
 
     private Long userId;
 
-    private String status;
+    private PaymentStatus status;
 
     private Instant timestamp;
 
